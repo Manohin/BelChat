@@ -24,6 +24,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="belgorod_3" translatesAutoresizingMaskIntoConstraints="NO" id="045-2y-jZk">
                                 <rect key="frame" x="0.0" y="0.0" width="310" height="526"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BelChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpg-EK-iFV">
+                                <rect key="frame" x="16" y="88" width="278" height="60"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="46"/>
+                                <color key="textColor" red="0.15982481213077646" green="0.21111354553890235" blue="0.30782433712121215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsF-sI-ofW">
                                 <rect key="frame" x="32" y="384" width="246" height="35"/>
                                 <color key="backgroundColor" red="0.38560649749999998" green="0.50121158359999995" blue="0.72754341359999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,17 +63,16 @@
                                 <color key="textColor" red="0.15982481209999999" green="0.2111135455" blue="0.30782433710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BelChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpg-EK-iFV">
-                                <rect key="frame" x="16" y="88" width="278" height="60"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="46"/>
-                                <color key="textColor" red="0.15982481213077646" green="0.21111354553890235" blue="0.30782433712121215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="FGM-nf-DBl">
+                                <rect key="frame" x="97" y="484" width="116" height="26"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0GT-uE-9Ok" firstAttribute="centerX" secondItem="AyR-ay-a0H" secondAttribute="centerX" id="0fv-Af-MWN"/>
+                            <constraint firstItem="FGM-nf-DBl" firstAttribute="centerX" secondItem="AyR-ay-a0H" secondAttribute="centerX" id="3C3-hF-7vg"/>
                             <constraint firstItem="0GT-uE-9Ok" firstAttribute="top" secondItem="XsF-sI-ofW" secondAttribute="bottom" constant="8" id="6l9-MM-39o"/>
+                            <constraint firstAttribute="bottom" secondItem="FGM-nf-DBl" secondAttribute="bottom" constant="16" id="G4E-XM-g18"/>
                             <constraint firstItem="XsF-sI-ofW" firstAttribute="centerX" secondItem="AyR-ay-a0H" secondAttribute="centerX" id="JsY-Qz-DBF"/>
                             <constraint firstItem="tQV-kI-GcZ" firstAttribute="leading" secondItem="AyR-ay-a0H" secondAttribute="leading" constant="16" id="OZJ-6I-G1C"/>
                             <constraint firstItem="Vpg-EK-iFV" firstAttribute="top" secondItem="AyR-ay-a0H" secondAttribute="top" constant="88" id="OrU-1i-E1N"/>
@@ -98,6 +103,7 @@
             <connections>
                 <outlet property="descriptionTextLabel" destination="tQV-kI-GcZ" id="73v-PC-Tbg"/>
                 <outlet property="enterButton" destination="0GT-uE-9Ok" id="nT8-pX-s7T"/>
+                <outlet property="pageControl" destination="FGM-nf-DBl" id="aqq-uE-9QM"/>
                 <outlet property="registrationButton" destination="XsF-sI-ofW" id="0Vb-56-INg"/>
                 <outlet property="sliderImageView" destination="045-2y-jZk" id="ocU-3a-rZJ"/>
             </connections>

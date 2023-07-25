@@ -13,7 +13,7 @@ class SliderCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var sliderImageView: UIImageView!
     @IBOutlet weak var registrationButton: UIButton!
     @IBOutlet weak var enterButton: UIButton!
-    
+    @IBOutlet weak var pageControl: UIPageControl!
     
     static let reuseID = "SliderCollectionViewCell"
 
@@ -31,15 +31,13 @@ class SliderCollectionViewCell: UICollectionViewCell {
         if slide.id == 3 {
             registrationButton.isHidden = false
             enterButton.isHidden = false
+            pageControl.isHidden = true
         }
     }
-    
     
     @IBAction func registrationButtonTapped(_ sender: UIButton) {
     }
     
     @IBAction func enterButtonTapped(_ sender: UIButton) {
     }
-    
-    
 }

@@ -17,12 +17,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         collectionViewConfig()
-        
-        let firstSlide = Slide(text: "test1", image: UIImage(named: "belgorod-1") ?? .actions, id: 1)
-        let secondSlide = Slide(text: "test2", image: UIImage(named: "belgorod_2") ?? .actions, id: 2)
-        let thirdSlide = Slide(text: "test3", image: UIImage(named: "belgorod_3") ?? .actions, id: 3)
-        
-        slides = [firstSlide, secondSlide, thirdSlide]
+        slides = Slide.getSlides()
     }
     
     func collectionViewConfig() {
@@ -37,7 +32,6 @@ class LoginViewController: UIViewController {
         collectionView.backgroundColor = .gray
         collectionView.isPagingEnabled = true
         
-        
         view.addSubview(collectionView)
         
         collectionView.delegate = self
@@ -46,7 +40,6 @@ class LoginViewController: UIViewController {
         collectionView.register(UINib(nibName: SliderCollectionViewCell.reuseID, bundle: nil), forCellWithReuseIdentifier: SliderCollectionViewCell.reuseID)
         
     }
-  
 }
 
 extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -59,6 +52,8 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SliderCollectionViewCell.reuseID, for: indexPath) as! SliderCollectionViewCell
         
         let slide = slides[indexPath.row]
+        cell.pageControl.numberOfPages = slides.count
+        cell.pageControl.currentPage = slide.id - 1
         cell.configureCell(slide: slide)
         
         return cell
@@ -67,6 +62,4 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         view.frame.size
     }
-    
-    
 }
