@@ -21,6 +21,8 @@
 		8A3B6DDA2A7164580041487A /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B6DD92A7164580041487A /* RegistrationViewController.swift */; };
 		8A3B6DDC2A7164810041487A /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B6DDB2A7164810041487A /* AuthorizationViewController.swift */; };
 		8A3B6DDE2A7196B30041487A /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B6DDD2A7196B30041487A /* AppViewController.swift */; };
+		8A746B612A71DBC3007E10FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A746B602A71DBC3007E10FC /* Extensions.swift */; };
+		8A746B632A71DD9E007E10FC /* CheckField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A746B622A71DD9E007E10FC /* CheckField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		8A3B6DD92A7164580041487A /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		8A3B6DDB2A7164810041487A /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		8A3B6DDD2A7196B30041487A /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		8A746B602A71DBC3007E10FC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8A746B622A71DD9E007E10FC /* CheckField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				8A3B6DBE2A703E3F0041487A /* LaunchScreen.storyboard */,
 				8A3B6DC12A703E3F0041487A /* Info.plist */,
 				8A3B6DC72A703FDF0041487A /* GoogleService-Info.plist */,
+				8A746B602A71DBC3007E10FC /* Extensions.swift */,
+				8A746B622A71DD9E007E10FC /* CheckField.swift */,
 			);
 			path = BelChat;
 			sourceTree = "<group>";
@@ -210,7 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A3B6DDC2A7164810041487A /* AuthorizationViewController.swift in Sources */,
+				8A746B612A71DBC3007E10FC /* Extensions.swift in Sources */,
 				8A3B6DDA2A7164580041487A /* RegistrationViewController.swift in Sources */,
+				8A746B632A71DD9E007E10FC /* CheckField.swift in Sources */,
 				8A3B6DDE2A7196B30041487A /* AppViewController.swift in Sources */,
 				8A3B6DCE2A704A7F0041487A /* LoginViewController.swift in Sources */,
 				8A3B6DB42A703E3C0041487A /* AppDelegate.swift in Sources */,
@@ -371,7 +379,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,7 +411,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,11 +7,20 @@
 
 import UIKit
 
+protocol LoginViewControllerDelegate {
+    func openRegistrationVC()
+    func openAuthorizationVC()
+    func closeView()
+}
+
 class LoginViewController: UIViewController {
     
     var collectionView: UICollectionView!
-    
+    var registrationVC: RegistrationViewController!
+    var authorizationVC: AuthorizationViewController!
     var slides: [Slide] = []
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,11 +64,48 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
         cell.pageControl.numberOfPages = slides.count
         cell.pageControl.currentPage = slide.id - 1
         cell.configureCell(slide: slide)
-        
+        cell.delegate = self
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         view.frame.size
     }
+}
+
+extension LoginViewController: LoginViewControllerDelegate {
+    func openAuthorizationVC() {
+        authorizationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AuthorizationViewController") as? AuthorizationViewController
+        
+        authorizationVC.delegate = self
+        
+        self.view.insertSubview(authorizationVC.view, at: 1)
+    }
+    
+    
+    func openRegistrationVC() {
+        
+        registrationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegistrationViewController") as? RegistrationViewController
+        
+        registrationVC.delegate = self
+        
+        self.view.insertSubview(registrationVC.view, at: 1)
+       
+    }
+    
+    func closeView() {
+        
+        if authorizationVC != nil {
+            authorizationVC.view.removeFromSuperview()
+            authorizationVC = nil
+        } else if registrationVC != nil {
+            registrationVC.view.removeFromSuperview()
+            registrationVC = nil
+        }
+        
+       
+        
+    }
+    
+    
 }

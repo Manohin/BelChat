@@ -8,22 +8,47 @@
 import UIKit
 
 class RegistrationViewController: UIViewController {
-
+    
+    var delegate: LoginViewControllerDelegate!
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var rePasswordTextField: UITextField!
+    
+    @IBOutlet weak var emailView: UIView!
+    @IBOutlet weak var passwordView: UIView!
+    @IBOutlet weak var repasswordView: UIView!
+    
+    
+    let check = CheckField.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapToView))
+        view.addGestureRecognizer(tapGesture)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func closeButtonTapped(_ sender: UIButton) {
+        
+        delegate.closeView()
     }
-    */
-
+    
+    
+    @IBAction func registrationButtonTapped(_ sender: UIButton) {
+        
+        guard check.validField(emailView, emailTextField),
+              check.validField(passwordView, passwordTextField) else {
+            print("Неправильный ввод")
+            return
+        }
+        guard rePasswordTextField.text == passwordTextField.text else {
+            print("Пароли не совпадают!")
+            return
+        }
+        print("DONE!")
+        
+    }
 }

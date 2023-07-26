@@ -52,17 +52,17 @@
                                 <rect key="frame" x="97" y="484" width="116" height="26"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsF-sI-ofW">
-                                <rect key="frame" x="16" y="361" width="278" height="40"/>
-                                <color key="backgroundColor" red="0.38560649749999998" green="0.50121158359999995" blue="0.72754341359999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="353" width="278" height="48"/>
+                                <color key="backgroundColor" red="0.20203888419999999" green="0.4386050105" blue="0.64075320960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="dYG-xd-hF3"/>
+                                    <constraint firstAttribute="height" constant="48" id="dYG-xd-hF3"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Регистрация"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="16"/>
+                                        <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>

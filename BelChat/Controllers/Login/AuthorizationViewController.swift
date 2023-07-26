@@ -9,10 +9,13 @@ import UIKit
 
 class AuthorizationViewController: UIViewController {
 
+    var delegate: LoginViewControllerDelegate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapToView))
+        view.addGestureRecognizer(tapGesture)
     }
     
 
@@ -26,4 +29,15 @@ class AuthorizationViewController: UIViewController {
     }
     */
 
+    @IBAction func registrationButtonTapped(_ sender: UIButton) {
+    }
+    
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+    }
+    
+    @IBAction func closeButtonTapped(_ sender: UIButton) {
+        delegate.closeView()
+    }
+    
+    
 }
