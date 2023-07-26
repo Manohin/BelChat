@@ -9,6 +9,7 @@ import UIKit
 
 class SliderCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var nameAppLabel: UILabel!
     @IBOutlet weak var descriptionTextLabel: UILabel!
     @IBOutlet weak var sliderImageView: UIImageView!
     @IBOutlet weak var registrationButton: UIButton!
@@ -21,6 +22,7 @@ class SliderCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         registrationButton.isHidden = true
         enterButton.isHidden = true
+        pageControl.isEnabled = false
     }
 
     
@@ -32,6 +34,9 @@ class SliderCollectionViewCell: UICollectionViewCell {
             registrationButton.isHidden = false
             enterButton.isHidden = false
             pageControl.isHidden = true
+        } else if slide.id == 2 {
+            descriptionTextLabel.textColor = .black
+            nameAppLabel.textColor = .black
         }
     }
     
