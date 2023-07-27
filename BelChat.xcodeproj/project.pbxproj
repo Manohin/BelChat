@@ -67,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				8A3B6DB22A703E3C0041487A /* BelChat */,
+				8A3B6DBC2A703E3F0041487A /* Assets.xcassets */,
 				8A3B6DB12A703E3C0041487A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,15 +85,9 @@
 			children = (
 				8A3B6DD42A705FBF0041487A /* Models */,
 				8A3B6DCF2A70515B0041487A /* Views */,
-				8A3B6DB32A703E3C0041487A /* AppDelegate.swift */,
-				8A3B6DB52A703E3C0041487A /* SceneDelegate.swift */,
 				8A3B6DCC2A7049090041487A /* Controllers */,
-				8A3B6DB92A703E3C0041487A /* Main.storyboard */,
-				8A3B6DBC2A703E3F0041487A /* Assets.xcassets */,
-				8A3B6DBE2A703E3F0041487A /* LaunchScreen.storyboard */,
-				8A3B6DC12A703E3F0041487A /* Info.plist */,
-				8A3B6DC72A703FDF0041487A /* GoogleService-Info.plist */,
-				8A746B602A71DBC3007E10FC /* Extensions.swift */,
+				8A746B6B2A733072007E10FC /* Storyboards */,
+				8A746B6A2A733061007E10FC /* Application */,
 			);
 			path = BelChat;
 			sourceTree = "<group>";
@@ -143,6 +138,27 @@
 				8A3B6DDD2A7196B30041487A /* AppViewController.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		8A746B6A2A733061007E10FC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8A3B6DB32A703E3C0041487A /* AppDelegate.swift */,
+				8A3B6DB52A703E3C0041487A /* SceneDelegate.swift */,
+				8A3B6DC12A703E3F0041487A /* Info.plist */,
+				8A3B6DC72A703FDF0041487A /* GoogleService-Info.plist */,
+				8A746B602A71DBC3007E10FC /* Extensions.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8A746B6B2A733072007E10FC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8A3B6DB92A703E3C0041487A /* Main.storyboard */,
+				8A3B6DBE2A703E3F0041487A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,7 +401,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P894A63FN8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BelChat/Info.plist;
+				INFOPLIST_FILE = BelChat/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -417,7 +433,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P894A63FN8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BelChat/Info.plist;
+				INFOPLIST_FILE = BelChat/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
