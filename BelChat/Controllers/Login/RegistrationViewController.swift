@@ -9,8 +9,6 @@ import UIKit
 
 class RegistrationViewController: UIViewController {
     
-    var delegate: LoginViewControllerDelegate!
-    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var rePasswordTextField: UITextField!
@@ -19,8 +17,10 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var passwordView: UIView!
     @IBOutlet weak var repasswordView: UIView!
     
-    
+    var delegate: LoginViewControllerDelegate!
     let check = CheckField.shared
+    let service = Service.shared
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,14 +41,32 @@ class RegistrationViewController: UIViewController {
         
         guard check.validField(emailView, emailTextField),
               check.validField(passwordView, passwordTextField) else {
-            print("Неправильный ввод")
             return
         }
+        
         guard rePasswordTextField.text == passwordTextField.text else {
             print("Пароли не совпадают!")
             return
         }
-        print("DONE!")
         
+        service.createNewUser(
+            LoginField(
+                email: emailTextField.text!,
+                password: passwordTextField.text!
+            )
+        ) { code in
+            switch code.code {
+            case 0:
+                print("Ошибка регистрации")
+            case 1:
+                let alert = UIAlertController(title: "Поздравляем!", message: "Вы успешно зарегистрированы!", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Отлично!", style: .cancel, handler: { [weak self] action in
+                self?.delegate.closeView()
+                }))
+                self.present(alert, animated: true)
+            default:
+                print("Неизвестная ошибка")
+            }
+        }
     }
 }

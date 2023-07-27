@@ -23,6 +23,9 @@
 		8A3B6DDE2A7196B30041487A /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B6DDD2A7196B30041487A /* AppViewController.swift */; };
 		8A746B612A71DBC3007E10FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A746B602A71DBC3007E10FC /* Extensions.swift */; };
 		8A746B632A71DD9E007E10FC /* CheckField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A746B622A71DD9E007E10FC /* CheckField.swift */; };
+		8A746B652A730210007E10FC /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A746B642A730210007E10FC /* Service.swift */; };
+		8A746B672A7302D0007E10FC /* LoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A746B662A7302D0007E10FC /* LoginField.swift */; };
+		8A746B692A7303CA007E10FC /* ResponceCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A746B682A7303CA007E10FC /* ResponceCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		8A3B6DDD2A7196B30041487A /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		8A746B602A71DBC3007E10FC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8A746B622A71DD9E007E10FC /* CheckField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckField.swift; sourceTree = "<group>"; };
+		8A746B642A730210007E10FC /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		8A746B662A7302D0007E10FC /* LoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginField.swift; sourceTree = "<group>"; };
+		8A746B682A7303CA007E10FC /* ResponceCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponceCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +93,6 @@
 				8A3B6DC12A703E3F0041487A /* Info.plist */,
 				8A3B6DC72A703FDF0041487A /* GoogleService-Info.plist */,
 				8A746B602A71DBC3007E10FC /* Extensions.swift */,
-				8A746B622A71DD9E007E10FC /* CheckField.swift */,
 			);
 			path = BelChat;
 			sourceTree = "<group>";
@@ -113,7 +118,11 @@
 		8A3B6DD42A705FBF0041487A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8A746B622A71DD9E007E10FC /* CheckField.swift */,
 				8A3B6DD52A705FD50041487A /* Slide.swift */,
+				8A746B642A730210007E10FC /* Service.swift */,
+				8A746B662A7302D0007E10FC /* LoginField.swift */,
+				8A746B682A7303CA007E10FC /* ResponceCode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -215,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A746B692A7303CA007E10FC /* ResponceCode.swift in Sources */,
 				8A3B6DDC2A7164810041487A /* AuthorizationViewController.swift in Sources */,
 				8A746B612A71DBC3007E10FC /* Extensions.swift in Sources */,
 				8A3B6DDA2A7164580041487A /* RegistrationViewController.swift in Sources */,
@@ -223,6 +233,8 @@
 				8A3B6DCE2A704A7F0041487A /* LoginViewController.swift in Sources */,
 				8A3B6DB42A703E3C0041487A /* AppDelegate.swift in Sources */,
 				8A3B6DB62A703E3C0041487A /* SceneDelegate.swift in Sources */,
+				8A746B672A7302D0007E10FC /* LoginField.swift in Sources */,
+				8A746B652A730210007E10FC /* Service.swift in Sources */,
 				8A3B6DD22A7051AF0041487A /* SliderCollectionViewCell.swift in Sources */,
 				8A3B6DD62A705FD50041487A /* Slide.swift in Sources */,
 			);

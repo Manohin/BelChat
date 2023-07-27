@@ -10,7 +10,7 @@ import UIKit
 class CheckField {
     
     static let shared = CheckField()
-    init() { }
+    init() {}
     
     //isValid
     private func isValid(_ type: String, _ data: String) -> Bool {
