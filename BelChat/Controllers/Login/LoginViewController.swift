@@ -20,8 +20,6 @@ class LoginViewController: UIViewController {
     var authorizationVC: AuthorizationViewController!
     var slides: [Slide] = []
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,8 +33,6 @@ class LoginViewController: UIViewController {
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
         
-        
-        
     collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         collectionView.backgroundColor = .gray
         collectionView.isPagingEnabled = true
@@ -47,7 +43,6 @@ class LoginViewController: UIViewController {
         collectionView.dataSource = self
         
         collectionView.register(UINib(nibName: SliderCollectionViewCell.reuseID, bundle: nil), forCellWithReuseIdentifier: SliderCollectionViewCell.reuseID)
-        
     }
 }
 
@@ -82,15 +77,11 @@ extension LoginViewController: LoginViewControllerDelegate {
         self.view.insertSubview(authorizationVC.view, at: 1)
     }
     
-    
     func openRegistrationVC() {
-        
         registrationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegistrationViewController") as? RegistrationViewController
         
         registrationVC.delegate = self
-        
         self.view.insertSubview(registrationVC.view, at: 1)
-       
     }
     
     func closeView() {
@@ -102,10 +93,5 @@ extension LoginViewController: LoginViewControllerDelegate {
             registrationVC.view.removeFromSuperview()
             registrationVC = nil
         }
-        
-       
-        
     }
-    
-    
 }

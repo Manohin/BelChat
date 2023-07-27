@@ -23,8 +23,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         } else {
             startLogin()
         }
-        
-        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

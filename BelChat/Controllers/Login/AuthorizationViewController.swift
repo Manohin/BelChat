@@ -27,6 +27,4 @@ class AuthorizationViewController: UIViewController {
     @IBAction func closeButtonTapped(_ sender: UIButton) {
         delegate.closeView()
     }
-    
-    
 }

@@ -27,7 +27,6 @@ class SliderCollectionViewCell: UICollectionViewCell {
         pageControl.isEnabled = false
     }
 
-    
     func configureCell(slide: Slide) {
         sliderImageView.image = slide.image
         descriptionTextLabel.text = slide.text
