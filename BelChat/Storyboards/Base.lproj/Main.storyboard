@@ -114,7 +114,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="12"/>
+                                                <integer key="value" value="14"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -136,7 +136,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="12"/>
+                                                <integer key="value" value="14"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -158,7 +158,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="12"/>
+                                                <integer key="value" value="14"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -230,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A6B-I8-lbZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="-30"/>
+            <point key="canvasLocation" x="1794.6564885496182" y="-30.281690140845072"/>
         </scene>
         <!--Item-->
         <scene sceneID="RBL-f8-Shy">
@@ -295,6 +295,11 @@
                                                     <constraint firstItem="tZ9-e6-kfL" firstAttribute="leading" secondItem="vG2-28-Jch" secondAttribute="leading" constant="8" id="ovk-SD-elB"/>
                                                     <constraint firstAttribute="bottom" secondItem="tZ9-e6-kfL" secondAttribute="bottom" constant="8" id="v7S-cw-Yfa"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5PB-Ea-XBc">
                                                 <rect key="frame" x="0.0" y="65.999999999999972" width="329" height="50"/>
@@ -316,6 +321,11 @@
                                                     <constraint firstItem="c0E-FQ-bC0" firstAttribute="leading" secondItem="5PB-Ea-XBc" secondAttribute="leading" constant="8" id="euh-m2-WWs"/>
                                                     <constraint firstAttribute="trailing" secondItem="c0E-FQ-bC0" secondAttribute="trailing" constant="8" id="uCv-Ze-4Et"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <constraints>
