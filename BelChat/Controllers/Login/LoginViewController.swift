@@ -13,7 +13,7 @@ protocol LoginViewControllerDelegate {
     func closeView()
 }
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
     
     var collectionView: UICollectionView!
     var registrationVC: RegistrationViewController!

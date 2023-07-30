@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SliderCollectionViewCell: UICollectionViewCell {
+final class SliderCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var nameAppLabel: UILabel!
     @IBOutlet weak var descriptionTextLabel: UILabel!

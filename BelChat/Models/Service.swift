@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class Service {
+final class Service {
     static let shared = Service()
     
     init() {}
